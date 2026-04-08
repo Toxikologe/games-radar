@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Gaming Update Radar</title>
+    <style>
+        /* Ein dunkles, cleanes Gaming-Design */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00ff88;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .panel {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .steam-list {
+            flex: 1;
+        }
+        .news-feed {
+            flex: 2;
+        }
+        .game-item {
+            background-color: #2a2a2a;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid #00ff88;
+            border-radius: 4px;
+        }
+        .news-item {
+            background-color: #2a2a2a;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            transition: transform 0.2s;
+        }
+        .news-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
+        }
+        .news-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .news-title a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+        .news-title a:hover {
+            text-decoration: underline;
+        }
+        .news-date {
+            font-size: 0.8em;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #00ff88;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #00cc6a;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎮 Mein Gaming Update Radar</h1>
+    <button onclick="ladeDaten()">Daten jetzt aktualisieren</button>
+
+    <div class="container">
+        <div class="panel steam-list">
+            <h2>Meine Watchlist</h2>
+            <div id="games-container">Warte auf Daten...</div>
+        </div>
+
+        <div class="panel news-feed">
+            <h2>Aktuelle News & Releases</h2>
+            <div id="news-container">Warte auf Daten...</div>
+        </div>
+    </div>
+
+    <script>
+        // =====================================================================
+        // WICHTIG: Ersetze den Link in den Anführungszeichen durch deinen echten GitHub Raw Link!
+        // =====================================================================
+        const GITHUB_RAW_URL = 'DEIN_GITHUB_RAW_LINK_HIER'; 
+        
+        // Dein eingefügter NewsAPI Key
+        const NEWS_API_KEY = 'f10c753fd6ce421cbbf5b519cfbcb678';
+        // =====================================================================
+
+        async function ladeDaten() {
+            document.getElementById('games-container').innerHTML = "Lade Spiele...";
+            document.getElementById('news-container').innerHTML = "Lade News...";
+
+            try {
+                // 1. Spiele von GitHub laden
+                const response = await fetch(GITHUB_RAW_URL);
+                if (!response.ok) throw new Error("Netzwerkfehler beim Laden von GitHub");
+                const text = await response.text();
+                
+                // Spieleliste formatieren (leere Zeilen entfernen)
+                const spiele = text.split('\n').filter(game => game.trim() !== '');
+                
+                if (spiele.length === 0) {
+                    document.getElementById('games-container').innerHTML = "Keine Spiele in der Liste gefunden.";
+                    return;
+                }
+
+                // Liste links anzeigen
+                document.getElementById('games-container').innerHTML = spiele.map(game => 
+                    `<div class="game-item">${game}</div>`
+                ).join('');
+
+                // 2. News zu diesen Spielen laden
+                ladeNews(spiele);
+
+            } catch (error) {
+                document.getElementById('games-container').innerHTML = "Fehler beim Laden der Spiele. Hast du den GitHub-Link oben im Code korrekt eingefügt?";
+                document.getElementById('news-container').innerHTML = "Warte auf gültige Spieleliste...";
+                console.error(error);
+            }
+        }
+
+        async function ladeNews(spieleListe) {
+            document.getElementById('news-container').innerHTML = "Lade echte News aus dem Netz...";
+
+            // Suchbegriff bauen: Wir nehmen die ersten 3 Spiele deiner Liste
+            // (Mehr als 3 gleichzeitig macht die Suchanfrage oft zu ungenau)
+            const topGames = spieleListe.slice(0, 3).map(game => `"${game}"`).join(' OR ');
+            const searchQuery = topGames ? encodeURIComponent(`(${topGames})`) : 'gaming';
+
+            // Die URL für die NewsAPI zusammenbauen (Sucht auf Deutsch, sortiert nach Aktualität)
+            const url = `https://newsapi.org/v2/everything?q=${searchQuery}&language=de&sortBy=publishedAt&apiKey=${NEWS_API_KEY}`;
+
+            try {
+                // API anfragen
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`Fehler ${response.status}: Die NewsAPI blockiert die Anfrage. Nutzt du die Datei lokal?`);
+                const data = await response.json();
+
+                // Prüfen ob News gefunden wurden
+                if (!data.articles || data.articles.length === 0) {
+                    document.getElementById('news-container').innerHTML = `Momentan keine brandneuen News zu deinen Top-Spielen gefunden. (Gesucht nach: ${spieleListe.slice(0, 3).join(', ')})`;
+                    return;
+                }
+
+                // Die Top 10 Artikel anzeigen lassen
+                const topArticles = data.articles.slice(0, 10);
+
+                document.getElementById('news-container').innerHTML = topArticles.map(article => `
+                    <div class="news-item">
+                        <div class="news-title">
+                            <a href="${article.url}" target="_blank">
+                                ${article.title}
+                            </a>
+                        </div>
+                        <div class="news-date">${new Date(article.publishedAt).toLocaleDateString('de-DE')} - ${article.source.name}</div>
+                        <div>${article.description || "Keine Kurzbeschreibung verfügbar. Klicke auf den Titel, um den ganzen Artikel zu lesen."}</div>
+                    </div>
+                `).join('');
+
+            } catch (error) {
+                document.getElementById('news-container').innerHTML = "Fehler beim Laden der News. (Denke daran: Die kostenlose NewsAPI funktioniert nur, wenn du die HTML-Datei lokal auf deinem PC startest).";
+                console.error("NewsAPI Fehler:", error);
+            }
+        }
+
+        // Lädt die Daten direkt beim Öffnen der Seite automatisch
+        window.onload = ladeDaten;
+    </script>
+</body>
+</html>
