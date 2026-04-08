@@ -2,20 +2,24 @@ name: Update Steam Games List
 
 on:
   schedule:
-    - cron: '0 6 * * *' # Täglich um 6:00 Uhr morgens
-  workflow_dispatch: # Erlaubt manuelles Starten auf GitHub
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+# Das hier ist neu und gibt der Action die Erlaubnis, die Datei zu speichern!
+permissions:
+  contents: write 
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4 # Geupdatet auf v4
 
       - name: Install Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4 # Geupdatet auf v4
         with:
-          node-version: '16'
+          node-version: '20' # Geupdatet auf eine aktuelle Version
 
       - name: Install Dependencies
         run: npm install axios
