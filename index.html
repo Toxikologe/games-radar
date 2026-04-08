@@ -108,93 +108,51 @@
     </div>
 
     <script>
-        // =====================================================================
-        // WICHTIG: Ersetze den Link in den Anführungszeichen durch deinen echten GitHub Raw Link!
-        // =====================================================================
-        const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/Toxikologe/games-radar/refs/heads/main/meine_spiele.txt'; 
-        
-        // Dein eingefügter NewsAPI Key
-        const NEWS_API_KEY = 'f10c753fd6ce421cbbf5b519cfbcb678';
-        // =====================================================================
+        // Dein NEUER Raw Link zur .json Datei!
+        const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/Toxikologe/games-radar/main/dashboard_data.json'; 
 
         async function ladeDaten() {
-            document.getElementById('games-container').innerHTML = "Lade Spiele...";
+            document.getElementById('games-container').innerHTML = "Lade Daten...";
             document.getElementById('news-container').innerHTML = "Lade News...";
 
             try {
-                // 1. Spiele von GitHub laden
+                // Holt das fertig geschnürte Paket von GitHub
                 const response = await fetch(GITHUB_RAW_URL);
-                if (!response.ok) throw new Error("Netzwerkfehler beim Laden von GitHub");
-                const text = await response.text();
+                if (!response.ok) throw new Error("Fehler beim Laden von GitHub");
                 
-                // Spieleliste formatieren (leere Zeilen entfernen)
-                const spiele = text.split('\n').filter(game => game.trim() !== '');
+                // Da es jetzt eine JSON ist, können wir sie direkt als Objekt lesen
+                const data = await response.json();
                 
-                if (spiele.length === 0) {
-                    document.getElementById('games-container').innerHTML = "Keine Spiele in der Liste gefunden.";
-                    return;
-                }
-
-                // Liste links anzeigen
-                document.getElementById('games-container').innerHTML = spiele.map(game => 
+                // Spieleliste bauen
+                document.getElementById('games-container').innerHTML = data.spiele.map(game => 
                     `<div class="game-item">${game}</div>`
                 ).join('');
 
-                // 2. News zu diesen Spielen laden
-                ladeNews(spiele);
+                // News bauen (keine API-Abfrage mehr nötig, News sind schon da!)
+                if (data.news.length === 0) {
+                    document.getElementById('news-container').innerHTML = "Keine News für heute gefunden.";
+                } else {
+                    document.getElementById('news-container').innerHTML = data.news.map(article => `
+                        <div class="news-item">
+                            <div class="news-title">
+                                <a href="${article.url}" target="_blank">${article.title}</a>
+                            </div>
+                            <div class="news-date">${new Date(article.publishedAt).toLocaleDateString('de-DE')} - ${article.source.name}</div>
+                            <div>${article.description || ""}</div>
+                        </div>
+                    `).join('');
+                }
+
+                // Zeigt das Datum des letzten Updates an (optional, sieht aber cool aus)
+                console.log("Letztes Update:", data.letztesUpdate);
 
             } catch (error) {
-                document.getElementById('games-container').innerHTML = "Fehler beim Laden der Spiele. Hast du den GitHub-Link oben im Code korrekt eingefügt?";
-                document.getElementById('news-container').innerHTML = "Warte auf gültige Spieleliste...";
+                document.getElementById('games-container').innerHTML = "Fehler aufgetreten.";
+                document.getElementById('news-container').innerHTML = "Fehler aufgetreten.";
                 console.error(error);
             }
         }
 
-        async function ladeNews(spieleListe) {
-            document.getElementById('news-container').innerHTML = "Lade echte News aus dem Netz...";
-
-            // Suchbegriff bauen: Wir nehmen die ersten 3 Spiele deiner Liste
-            // (Mehr als 3 gleichzeitig macht die Suchanfrage oft zu ungenau)
-            const topGames = spieleListe.slice(0, 3).map(game => `"${game}"`).join(' OR ');
-            const searchQuery = topGames ? encodeURIComponent(`(${topGames})`) : 'gaming';
-
-            // Die URL für die NewsAPI zusammenbauen (Sucht auf Deutsch, sortiert nach Aktualität)
-            const url = `https://newsapi.org/v2/everything?q=${searchQuery}&language=de&sortBy=publishedAt&apiKey=${NEWS_API_KEY}`;
-
-            try {
-                // API anfragen
-                const response = await fetch(url);
-                if (!response.ok) throw new Error(`Fehler ${response.status}: Die NewsAPI blockiert die Anfrage. Nutzt du die Datei lokal?`);
-                const data = await response.json();
-
-                // Prüfen ob News gefunden wurden
-                if (!data.articles || data.articles.length === 0) {
-                    document.getElementById('news-container').innerHTML = `Momentan keine brandneuen News zu deinen Top-Spielen gefunden. (Gesucht nach: ${spieleListe.slice(0, 3).join(', ')})`;
-                    return;
-                }
-
-                // Die Top 10 Artikel anzeigen lassen
-                const topArticles = data.articles.slice(0, 10);
-
-                document.getElementById('news-container').innerHTML = topArticles.map(article => `
-                    <div class="news-item">
-                        <div class="news-title">
-                            <a href="${article.url}" target="_blank">
-                                ${article.title}
-                            </a>
-                        </div>
-                        <div class="news-date">${new Date(article.publishedAt).toLocaleDateString('de-DE')} - ${article.source.name}</div>
-                        <div>${article.description || "Keine Kurzbeschreibung verfügbar. Klicke auf den Titel, um den ganzen Artikel zu lesen."}</div>
-                    </div>
-                `).join('');
-
-            } catch (error) {
-                document.getElementById('news-container').innerHTML = "Fehler beim Laden der News. (Denke daran: Die kostenlose NewsAPI funktioniert nur, wenn du die HTML-Datei lokal auf deinem PC startest).";
-                console.error("NewsAPI Fehler:", error);
-            }
-        }
-
-        // Lädt die Daten direkt beim Öffnen der Seite automatisch
         window.onload = ladeDaten;
     </script>
 </body>
