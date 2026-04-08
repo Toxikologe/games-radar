@@ -25,12 +25,15 @@ jobs:
         run: npm install axios
 
       - name: Run Script
+        env:
+          STEAM_KEY: ${{ secrets.STEAM_KEY }}
+          NEWS_KEY: ${{ secrets.NEWS_KEY }}
         run: node fetch_steam.js
 
       - name: Commit and Push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add meine_spiele.txt
-          git commit -m "Update Steam games list" || exit 0
+          git add dashboard_data.json
+          git commit -m "Update Dashboard Data" || exit 0
           git push
