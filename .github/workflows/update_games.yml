@@ -1,0 +1,32 @@
+name: Update Steam Games List
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Täglich um 6:00 Uhr morgens
+  workflow_dispatch: # Erlaubt manuelles Starten auf GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install Dependencies
+        run: npm install axios
+
+      - name: Run Script
+        run: node fetch_steam.js
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add meine_spiele.txt
+          git commit -m "Update Steam games list" || exit 0
+          git push
