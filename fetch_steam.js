@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 
 // --- HIER DEINE DATEN EINTRAGEN ---
-const STEAM_API_KEY = 'DEIN_STEAM_API_KEY'; // Erhältst du hier: https://steamcommunity.com/dev/apikey
+const STEAM_API_KEY = 'ED99823B13B0E679C02C103BBCD7B7BB'; // Erhältst du hier: https://steamcommunity.com/dev/apikey
 const STEAM_ID = '76561198133148029'; // Deine Steam-ID
 // ----------------------------------
 
