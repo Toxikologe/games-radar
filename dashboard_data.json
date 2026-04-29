@@ -237,6 +237,7 @@
     "Ironsight Test Server",
     "Mafia: The Old Country",
     "No One Survived",
+    "Road to Vostok",
     "VEILED EXPERTS FINAL BETA",
     "Saloon Simulator Playtest",
     "Resident Evil 4",
@@ -346,6 +347,19 @@
         "id": null,
         "name": "GameStar"
       },
+      "author": "Sören Diedrich",
+      "title": "Gabe Newell - Steam-Chef wird für Aussage gefeiert: »Wenn du ein Spiel versemmelst, hast du es für immer vergeigt« [Best of GameStar]",
+      "description": "Gabe Newell und andere Valve-Urgesteine erinnern sich an die Entwicklung von Half-Life 1. Der Kult-Shooter ist um ein Haar einer Katastrophe entgangen.",
+      "url": "https://www.gamestar.de/artikel/gabe-newell-marking-of-half-life-entwicklung,3404097.html",
+      "urlToImage": "https://images.cgames.de/images/gamestar/293/gabe-newell-half-life-1_6263208.jpg",
+      "publishedAt": "2026-04-27T15:33:00Z",
+      "content": "Es hätte nicht viel gefehlt und Half-Life 1 wäre wohl kaum der Kult-Shooter geworden, der er heute ist.\r\n2023 gab es eine neue Veröffentlichung rund um Half-Life! So, haben wir den alten Witz mal wie… [+3597 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "GameStar"
+      },
       "author": "Heiko Klinge",
       "title": "Plus - Kolumne: Crimson Desert - Eigentlich würde Petra es gern spielen, wenn nicht dieses eine große Problem mit dem Helden wäre",
       "description": "Schweigsame Helden sind das eine, stumme Helden sind das andere. Aber beides muss im Jahr 2026 so in der Welt verankert sein, dass meine Immersion nicht darunter leidet.",
@@ -381,5 +395,5 @@
       "content": "Für PC-Gamer ist Steam heute nicht mehr wegzudenken, doch Valve wäre fast pleitegegangen.\r\nValve plaudert aus dem Nähkästchen. In einer umfangreichen Dokumentation wird die Entstehungsgeschichte von … [+2057 chars]"
     }
   ],
-  "letztesUpdate": "28.4.2026, 10:01:19"
+  "letztesUpdate": "29.4.2026, 09:56:00"
 }
