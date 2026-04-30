@@ -237,7 +237,6 @@
     "Ironsight Test Server",
     "Mafia: The Old Country",
     "No One Survived",
-    "Road to Vostok",
     "VEILED EXPERTS FINAL BETA",
     "Saloon Simulator Playtest",
     "Resident Evil 4",
@@ -318,6 +317,7 @@
     "The Walking Trade",
     "Chrono Odyssey Playtest",
     "Gods, Death & Reapers Playtest",
+    "Gold Mining Simulator 2 Playtest",
     "DREADZONE",
     "Prison Survival: Architect of Crime Simulator Playtest",
     "Low-Budget Repairs Playtest",
@@ -380,20 +380,7 @@
       "urlToImage": "https://www.pcgameshardware.de/screenshots/original/2022/02/Gabe-Newell-Valve-Bild-1-pc-games_artwork2.jpg",
       "publishedAt": "2026-04-02T16:15:00Z",
       "content": "Das Spieleportfolio von Valve lässt sich im Wesentlichen mit zwei Eigenschaften zusammenfassen: Der Publisher kann nicht bis drei zählen - und alles davor ist dafür fast schon prädestiniert, ein Verk… [+2964 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Giga"
-      },
-      "author": "Martin Hartmann",
-      "title": "Danke! Ein Praktikant hat dafür gesorgt, dass wir heute auf Steam zocken",
-      "description": "Für PC-Gamer ist Steam heute nicht mehr wegzudenken, doch Valve wäre fast pleitegegangen.",
-      "url": "https://www.giga.de/games/danke-ein-praktikant-hat-dafuer-gesorgt-dass-wir-heute-auf-steam-zocken--01JD9JK01H1H8ZADQJGY0HT4TK",
-      "urlToImage": "https://static.giga.de/91/41/de/bce1ed9230260745eea9b673d0_cmUgMTkyMCAxMDgwAzkxYjE5MDA1YTZk.png",
-      "publishedAt": "2026-03-28T21:00:00Z",
-      "content": "Für PC-Gamer ist Steam heute nicht mehr wegzudenken, doch Valve wäre fast pleitegegangen.\r\nValve plaudert aus dem Nähkästchen. In einer umfangreichen Dokumentation wird die Entstehungsgeschichte von … [+2057 chars]"
     }
   ],
-  "letztesUpdate": "29.4.2026, 09:56:00"
+  "letztesUpdate": "30.4.2026, 09:59:33"
 }
