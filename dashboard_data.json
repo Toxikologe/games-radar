@@ -344,6 +344,32 @@
     {
       "source": {
         "id": null,
+        "name": "ComputerBase"
+      },
+      "author": "Max Doll",
+      "title": "Half-Life meets Survival: Industria 2 zeigt spannendes Potenzial und Baustellen",
+      "description": "Half-Life in der DDR, so ließ sich der Reiz des unter anderem in Deutschland entwickelten Industria beschreiben. Teil 2 ist eher wie die DDR: An einigen Stellen ganz vielversprechend, in der Umsetzung auf halbem Wege stecken geblieben. Die Entwickler wollen n…",
+      "url": "https://www.computerbase.de/news/gaming/half-life-meets-survival-industria-2-zeigt-spannendes-potenzial-und-baustellen.97162/",
+      "urlToImage": "https://pics.computerbase.de/1/2/2/4/5/9-6cf7591fdde46a48/article-1280x720.587a9430.jpg",
+      "publishedAt": "2026-05-03T14:28:00Z",
+      "content": "Half-Life in der DDR, so ließ sich der Reiz des unter anderem in Deutschland entwickelten Industria beschreiben. Teil 2 ist eher wie die DDR: An einigen Stellen ganz vielversprechend, in der Umsetzun… [+2135 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "PC Games Hardware"
+      },
+      "author": "Sven Brückner",
+      "title": "Half-Life 2: Spieler hatten recht - Valve hat Klassiker still verändert",
+      "description": "Valve hat Half-Life 2 über Jahre hinweg heimlich angepasst: Besonders ein bekanntes Rätsel wurde deutlich vereinfacht. Auch an Grafik und Details wurde bislang unbemerkt geschraubt, wie ein Video auf Youtube aufzeigt.",
+      "url": "https://www.pcgameshardware.de/Half-Life-2-Spiel-5176/News/Spieler-hatten-recht-Valve-hat-Klassiker-still-veraendert-1530028/",
+      "urlToImage": "https://www.pcgameshardware.de/screenshots/original/2024/12/half-life-2-valve-steam-hl2wallpaper02_16x9-pcgh_artwork1.jpg",
+      "publishedAt": "2026-05-03T11:15:00Z",
+      "content": "Wer sich erinnert, dass ein bestimmtes Rätsel in Half-Life 2 früher deutlich nerviger war, liegt offenbar richtig. Eine Analyse verschiedener Spielversionen durch den Youtuber Ocelot zeigt, dass Valv… [+2285 chars]"
+    },
+    {
+      "source": {
+        "id": null,
         "name": "GameStar"
       },
       "author": "Sören Diedrich",
@@ -368,5 +394,5 @@
       "content": "Petra hat kein Problem mit maulfaulen Helden. Allerdings sollte das dann auch zum Spiel passen.\r\nDieses Crimson Desert, ich möchte es wirklich gerne spielen. Und das, obwohl ich den Open Worlds eigen… [+2033 chars]"
     }
   ],
-  "letztesUpdate": "4.5.2026, 10:12:28"
+  "letztesUpdate": "5.5.2026, 09:51:08"
 }
