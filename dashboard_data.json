@@ -344,6 +344,19 @@
     {
       "source": {
         "id": null,
+        "name": "GameStar"
+      },
+      "author": "Marylin Marx",
+      "title": "Minispiel - Wie gut kennst du dich mit der PC-Spiel-Historie aus?",
+      "description": "Wisst ihr, ob Battlefield 2 vor oder nach Half-Life 2 erschienen ist? Das und noch viel mehr könnt ihr jetzt an Gaming-Wissen in unserem Spiel unter Beweis stellen.",
+      "url": "https://www.gamestar.de/artikel/minispiel-pc-releases,3453028.html",
+      "urlToImage": "https://images.cgames.de/images/gamestar/293/thisorthat_6418771.jpg",
+      "publishedAt": "2026-05-14T05:31:00Z",
+      "content": "Wisst ihr, wann D&amp;D: Dark Alliance erschien?\r\nWer schon ein wenig länger in die Tasten haut, kennt vermutlich mehr als 100 Spiele und ihr grobes Erscheinungsdatum. Wir denken da an Meilensteine w… [+1747 chars]"
+    },
+    {
+      "source": {
+        "id": null,
         "name": "ComputerBase"
       },
       "author": "Max Doll",
@@ -381,5 +394,5 @@
       "content": "Es hätte nicht viel gefehlt und Half-Life 1 wäre wohl kaum der Kult-Shooter geworden, der er heute ist.\r\n2023 gab es eine neue Veröffentlichung rund um Half-Life! So, haben wir den alten Witz mal wie… [+3597 chars]"
     }
   ],
-  "letztesUpdate": "14.5.2026, 10:23:58"
+  "letztesUpdate": "15.5.2026, 10:35:18"
 }
