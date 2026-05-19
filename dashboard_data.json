@@ -187,6 +187,7 @@
     "Mad Games Tycoon 2",
     "Werewolf: The Apocalypse - Heart of the Forest",
     "Zero Hour",
+    "The Infected",
     "Tormented Souls",
     "No Rest for the Wicked",
     "Night of the Dead",
@@ -344,6 +345,19 @@
     {
       "source": {
         "id": null,
+        "name": "PC Games"
+      },
+      "author": "Kevin Willing",
+      "title": "Half-Life 3: Valve-Legende erklärt, warum das Spiel heute ein \"Albtraum\" wäre",
+      "description": "Half-Life 3 sorgt selbst Jahre später noch für Diskussionen. Jetzt hat ein ehemaliger Valve-Autor überraschend deutlich erklärt, warum er mit der Reihe nichts mehr zu tun haben will.",
+      "url": "https://www.pcgames.de/Half-Life-3-Spiel-5201/News/ex-valve-autor-chet-faliszek-writer-abgesprungen-1534844/",
+      "urlToImage": "https://www.pcgames.de/screenshots/1280x1024/2021/07/Half-Life-2-Artwork-pc-games.jpg",
+      "publishedAt": "2026-05-17T15:00:00Z",
+      "content": "Half-Life 3 gehört seit Jahren zu den größten Running Gags der Gaming-Welt. Trotzdem sorgen Aussagen ehemaliger Valve-Mitarbeiter immer wieder sofort für neue Spekulationen. Genau deshalb hat der frü… [+2916 chars]"
+    },
+    {
+      "source": {
+        "id": null,
         "name": "GameStar"
       },
       "author": "Jesko Buchs",
@@ -407,5 +421,5 @@
       "content": "Es hätte nicht viel gefehlt und Half-Life 1 wäre wohl kaum der Kult-Shooter geworden, der er heute ist.\r\n2023 gab es eine neue Veröffentlichung rund um Half-Life! So, haben wir den alten Witz mal wie… [+3597 chars]"
     }
   ],
-  "letztesUpdate": "18.5.2026, 11:35:11"
+  "letztesUpdate": "19.5.2026, 10:54:24"
 }
