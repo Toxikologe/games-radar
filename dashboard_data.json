@@ -345,6 +345,19 @@
     {
       "source": {
         "id": null,
+        "name": "PC Games Hardware"
+      },
+      "author": "Sven Brückner",
+      "title": "Half-Life 3: Früherer Autor erklärt, warum eine Zusammenarbeit nicht mehr infrage kommt",
+      "description": "Chet Faliszek, ehemaliger Autor von Half-Life 2, spricht offen über seine Abneigung gegen große Spielreihen mit komplexer Lore. Half-Life 3 möchte er laut eigener Aussage \"nicht einmal mit einer drei Meter langen Stange anfassen\".",
+      "url": "https://www.pcgameshardware.de/Half-Life-3-Spiel-5201/News/Chet-Faliszek-erklaert-warum-eine-Zusammenarbeit-nicht-mehr-infrage-kommt-1535069/",
+      "urlToImage": "https://www.pcgameshardware.de/screenshots/original/2015/02/half-Life_3_unannounced-pc-games_artwork3.jpg",
+      "publishedAt": "2026-05-19T07:31:00Z",
+      "content": "Die Diskussionen um Half-Life 3 reißen seit Jahren nicht ab: Neue Gerüchte rund um eine mögliche Fortsetzung tauchen regelmäßig auf, konkrete Informationen von Valve bleiben jedoch weiterhin aus. Jet… [+2931 chars]"
+    },
+    {
+      "source": {
+        "id": null,
         "name": "PC Games"
       },
       "author": "Kevin Willing",
@@ -421,5 +434,5 @@
       "content": "Es hätte nicht viel gefehlt und Half-Life 1 wäre wohl kaum der Kult-Shooter geworden, der er heute ist.\r\n2023 gab es eine neue Veröffentlichung rund um Half-Life! So, haben wir den alten Witz mal wie… [+3597 chars]"
     }
   ],
-  "letztesUpdate": "19.5.2026, 10:54:24"
+  "letztesUpdate": "20.5.2026, 10:49:37"
 }
