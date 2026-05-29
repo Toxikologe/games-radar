@@ -56,6 +56,7 @@
     "The Guild 3",
     "Sniper Elite 4",
     "Fahrenheit: Indigo Prophecy Remastered",
+    "Stranded Deep",
     "Airline Tycoon Deluxe",
     "Dead Island Retro Revenge",
     "ARK: Survival Evolved",
@@ -286,6 +287,7 @@
     "Path of Exile 2",
     "ContractVille",
     "Nightingale Playtest",
+    "Crime Simulator",
     "Bodycam Playtest",
     "Nested Lands Playtest",
     "Jotunnslayer: Hordes of Hel",
@@ -344,6 +346,19 @@
     null
   ],
   "news": [
+    {
+      "source": {
+        "id": null,
+        "name": "GameStar"
+      },
+      "author": "Peter Bathge",
+      "title": "Plus - Special: Dark Messiah - Wirklich schon 20 Jahre her? Ein unvergleichliches Action-Rollenspiel hat gerade seinen geistigen Nachfolger bekommen",
+      "description": "Wenn ihr auch abseits von Shootern am liebsten in der Ego-Perspektive kämpft (mit Schwert und Schild!), dann solltet ihr euch The Adventures of Sir Kicksalot anschauen. Das ist nämlich stark von Dark Messiah inspiriert.",
+      "url": "https://www.gamestar.de/artikel/sir-kicksalot-getestet-action-rollenspiel-auf-steam,3453641.html",
+      "urlToImage": "https://images.cgames.de/images/gamestar/293/gs-plus-dark-messiah-of-might-and-magic_6420634.jpg",
+      "publishedAt": "2026-05-28T08:05:00Z",
+      "content": "Nahkampf und Magie in der Ego-Perspektive: Dark Messiah of Might and Magic ist vielen bis heute in guter Erinnerung. Peter hat jetzt den fast perfekten Nachfolger zum 20 Jahre alten Klassiker gefunde… [+2474 chars]"
+    },
     {
       "source": {
         "id": null,
@@ -421,20 +436,7 @@
       "urlToImage": "https://www.pcgameshardware.de/screenshots/original/2024/12/half-life-2-valve-steam-hl2wallpaper02_16x9-pcgh_artwork1.jpg",
       "publishedAt": "2026-05-03T11:15:00Z",
       "content": "Wer sich erinnert, dass ein bestimmtes Rätsel in Half-Life 2 früher deutlich nerviger war, liegt offenbar richtig. Eine Analyse verschiedener Spielversionen durch den Youtuber Ocelot zeigt, dass Valv… [+2285 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "GameStar"
-      },
-      "author": "Sören Diedrich",
-      "title": "Gabe Newell - Steam-Chef wird für Aussage gefeiert: »Wenn du ein Spiel versemmelst, hast du es für immer vergeigt« [Best of GameStar]",
-      "description": "Gabe Newell und andere Valve-Urgesteine erinnern sich an die Entwicklung von Half-Life 1. Der Kult-Shooter ist um ein Haar einer Katastrophe entgangen.",
-      "url": "https://www.gamestar.de/artikel/gabe-newell-marking-of-half-life-entwicklung,3404097.html",
-      "urlToImage": "https://images.cgames.de/images/gamestar/293/gabe-newell-half-life-1_6263208.jpg",
-      "publishedAt": "2026-04-27T15:33:00Z",
-      "content": "Es hätte nicht viel gefehlt und Half-Life 1 wäre wohl kaum der Kult-Shooter geworden, der er heute ist.\r\n2023 gab es eine neue Veröffentlichung rund um Half-Life! So, haben wir den alten Witz mal wie… [+3597 chars]"
     }
   ],
-  "letztesUpdate": "28.5.2026, 11:40:04"
+  "letztesUpdate": "29.5.2026, 11:29:40"
 }
