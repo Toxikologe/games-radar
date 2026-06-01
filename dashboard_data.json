@@ -353,6 +353,19 @@
     {
       "source": {
         "id": null,
+        "name": "Giga"
+      },
+      "author": "Martin Hartmann",
+      "title": "Ohne diesen Praktikanten würde es Steam heute nicht geben",
+      "description": "Für PC-Gamer ist Steam heute nicht mehr wegzudenken, doch Valve wäre fast pleitegegangen.",
+      "url": "https://www.giga.de/games/ohne-diesen-praktikanten-wuerde-es-steam-heute-nicht-geben--01JD9JK01H1H8ZADQJGY0HT4TK",
+      "urlToImage": "https://static.giga.de/91/41/de/bce1ed9230260745eea9b673d0_cmUgMTkyMCAxMDgwAzkxYjE5MDA1YTZk.png",
+      "publishedAt": "2026-05-31T05:33:00Z",
+      "content": "Für PC-Gamer ist Steam heute nicht mehr wegzudenken, doch Valve wäre fast pleitegegangen.\r\nValve plaudert aus dem Nähkästchen. In einer umfangreichen Dokumentation wird die Entstehungsgeschichte von … [+2057 chars]"
+    },
+    {
+      "source": {
+        "id": null,
         "name": "GameStar"
       },
       "author": "Peter Bathge",
@@ -442,5 +455,5 @@
       "content": "Wer sich erinnert, dass ein bestimmtes Rätsel in Half-Life 2 früher deutlich nerviger war, liegt offenbar richtig. Eine Analyse verschiedener Spielversionen durch den Youtuber Ocelot zeigt, dass Valv… [+2285 chars]"
     }
   ],
-  "letztesUpdate": "31.5.2026, 10:31:37"
+  "letztesUpdate": "1.6.2026, 13:03:15"
 }
