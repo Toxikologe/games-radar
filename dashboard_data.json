@@ -353,6 +353,32 @@
     {
       "source": {
         "id": null,
+        "name": "heise online"
+      },
+      "author": "Daniel Herbig",
+      "title": "DLSS 4.5: Nvidia verbessert Ray Reconstruction für Raytracing-Spiele",
+      "description": "Nvidias Ray-Reconstruction-Modell für DLSS 4.5 kommt im August und verbessert die Grafik in Raytracing-Spielen wie „Cyberpunk 2077“ – auf Wunsch vieler Nutzer.",
+      "url": "https://www.heise.de/news/DLSS-4-5-Nvidia-verbessert-Ray-Reconstruction-fuer-Raytracing-Spiele-11313102.html",
+      "urlToImage": "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/5/0/9/2/1/1/9/Screenshot_2026-06-01_092517-7505a1d7003b717a.png",
+      "publishedAt": "2026-06-01T07:43:00Z",
+      "content": "Nvidia hat auf der Computex ein verbessertes Ray-Reconstruction-Modell für DLSS 4.5 angekündigt, das im August für alle GeForce-RTX-Grafikkarten erscheint. Davon profitieren Spiele mit anspruchsvolle… [+2860 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Caschys Blog"
+      },
+      "author": "André Westphal",
+      "title": "Nvidia stellt verbesserte DLSS 4.5 Ray Reconstruction vor",
+      "description": "Nvidia hat im Rahmen der Computex 2026 die neue Technik DLSS 4.5 Ray Reconstruction vorgestellt. Kommt euch irgendwie bekannt vor? Ja, es handelt sich dabei um eine Weiterentwicklung von Ray Reconstruction. Es kommt nämlich jetzt für die Berechnungen ein Tran…",
+      "url": "https://stadt-bremerhaven.de/nvidia-stellt-verbesserte-dlss-4-5-ray-reconstruction-vor/",
+      "urlToImage": "https://stadt-bremerhaven.de/wp-content/uploads/2026/06/announcing-nvidia-dlss-4-5-ray-reconstruction.jpg",
+      "publishedAt": "2026-06-01T07:00:55Z",
+      "content": "Nvidia hat im Rahmen der Computex 2026 die neue Technik DLSS 4.5 Ray Reconstruction vorgestellt. Kommt euch irgendwie bekannt vor? Ja, es handelt sich dabei um eine Weiterentwicklung von Ray Reconstr… [+2711 chars]"
+    },
+    {
+      "source": {
+        "id": null,
         "name": "Giga"
       },
       "author": "Martin Hartmann",
@@ -455,5 +481,5 @@
       "content": "Wer sich erinnert, dass ein bestimmtes Rätsel in Half-Life 2 früher deutlich nerviger war, liegt offenbar richtig. Eine Analyse verschiedener Spielversionen durch den Youtuber Ocelot zeigt, dass Valv… [+2285 chars]"
     }
   ],
-  "letztesUpdate": "1.6.2026, 13:03:15"
+  "letztesUpdate": "2.6.2026, 11:57:21"
 }
