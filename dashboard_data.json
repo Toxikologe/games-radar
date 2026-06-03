@@ -353,6 +353,19 @@
     {
       "source": {
         "id": null,
+        "name": "GameStar"
+      },
+      "author": "Jusuf Hatic",
+      "title": "RTX-Technik - Bessere Bildqualität für alle RTX-GPUs: Nvidia startet DLSS 4.5 Ray Reconstruction im August",
+      "description": "Nvidia hat DLSS 4.5 Ray Reconstruction angekündigt: Die neue neuronale Denoiser-Technik erscheint im August für alle Geforce-RTX-GPUs.",
+      "url": "https://www.gamestar.de/artikel/dlss-4-5-ray-reconstruction-august-rtx-release,3453896.html",
+      "urlToImage": "https://images.cgames.de/images/gamestar/293/dlss-4-5_6421328.jpg",
+      "publishedAt": "2026-06-01T17:19:00Z",
+      "content": "Nvidia DLSS 4.5 Ray Reconstruction erscheint im August für alle Geforce-RTX-GPUs und soll das Denoising auf ein neues Level haben. (© Nvidia)\r\nNvidia hat auf der Computex 2026 nicht nur neue Hardware… [+2281 chars]"
+    },
+    {
+      "source": {
+        "id": null,
         "name": "heise online"
       },
       "author": "Daniel Herbig",
@@ -466,20 +479,7 @@
       "urlToImage": "https://pics.computerbase.de/1/2/2/4/5/9-6cf7591fdde46a48/article-1280x720.587a9430.jpg",
       "publishedAt": "2026-05-03T14:28:00Z",
       "content": "Half-Life in der DDR, so ließ sich der Reiz des unter anderem in Deutschland entwickelten Industria beschreiben. Teil 2 ist eher wie die DDR: An einigen Stellen ganz vielversprechend, in der Umsetzun… [+2135 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "PC Games Hardware"
-      },
-      "author": "Sven Brückner",
-      "title": "Half-Life 2: Spieler hatten recht - Valve hat Klassiker still verändert",
-      "description": "Valve hat Half-Life 2 über Jahre hinweg heimlich angepasst: Besonders ein bekanntes Rätsel wurde deutlich vereinfacht. Auch an Grafik und Details wurde bislang unbemerkt geschraubt, wie ein Video auf Youtube aufzeigt.",
-      "url": "https://www.pcgameshardware.de/Half-Life-2-Spiel-5176/News/Spieler-hatten-recht-Valve-hat-Klassiker-still-veraendert-1530028/",
-      "urlToImage": "https://www.pcgameshardware.de/screenshots/original/2024/12/half-life-2-valve-steam-hl2wallpaper02_16x9-pcgh_artwork1.jpg",
-      "publishedAt": "2026-05-03T11:15:00Z",
-      "content": "Wer sich erinnert, dass ein bestimmtes Rätsel in Half-Life 2 früher deutlich nerviger war, liegt offenbar richtig. Eine Analyse verschiedener Spielversionen durch den Youtuber Ocelot zeigt, dass Valv… [+2285 chars]"
     }
   ],
-  "letztesUpdate": "2.6.2026, 11:57:21"
+  "letztesUpdate": "3.6.2026, 12:29:03"
 }
