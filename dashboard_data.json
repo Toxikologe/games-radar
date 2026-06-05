@@ -355,6 +355,19 @@
         "id": null,
         "name": "GameStar"
       },
+      "author": "Jesko Buchs",
+      "title": "Special: New Game Plus - 7 Spiele, die beim zweiten Durchgang noch viel besser werden",
+      "description": "Es gibt Spiele, bei ein Durchgang nicht ausreicht, um alles zu sehen und die erst ab der zweiten Runde ihr volles Potenzial entfalten. Wir stellen euch sieben Titel vor, die ihr unbedingt im New Game Plus spielen solltet.",
+      "url": "https://www.gamestar.de/artikel/7-beste-spiele-fuer-new-game-plus,3447751.html",
+      "urlToImage": "https://images.cgames.de/images/gamestar/293/new-game-plus-sammelartikel-teaser-gs_6401044.jpg",
+      "publishedAt": "2026-06-04T05:23:00Z",
+      "content": "Ob Silent Hill f oder Dishonored 2: In beiden Spielen entgehen euch wesentliche Teile von Story und Spielerfahrung, wenn ihr keinen zweiten Durchgang wagt.\r\nSobald der Endboss umkippt und der Abspann… [+9744 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "GameStar"
+      },
       "author": "Jusuf Hatic",
       "title": "RTX-Technik - Bessere Bildqualität für alle RTX-GPUs: Nvidia startet DLSS 4.5 Ray Reconstruction im August",
       "description": "Nvidia hat DLSS 4.5 Ray Reconstruction angekündigt: Die neue neuronale Denoiser-Technik erscheint im August für alle Geforce-RTX-GPUs.",
@@ -466,20 +479,7 @@
       "urlToImage": "https://images.cgames.de/images/gamestar/293/thisorthat_6418771.jpg",
       "publishedAt": "2026-05-14T05:31:00Z",
       "content": "Wisst ihr, wann D&amp;D: Dark Alliance erschien?\r\nWer schon ein wenig länger in die Tasten haut, kennt vermutlich mehr als 100 Spiele und ihr grobes Erscheinungsdatum. Wir denken da an Meilensteine w… [+1747 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "ComputerBase"
-      },
-      "author": "Max Doll",
-      "title": "Half-Life meets Survival: Industria 2 zeigt spannendes Potenzial und Baustellen",
-      "description": "Half-Life in der DDR, so ließ sich der Reiz des unter anderem in Deutschland entwickelten Industria beschreiben. Teil 2 ist eher wie die DDR: An einigen Stellen ganz vielversprechend, in der Umsetzung auf halbem Wege stecken geblieben. Die Entwickler wollen n…",
-      "url": "https://www.computerbase.de/news/gaming/half-life-meets-survival-industria-2-zeigt-spannendes-potenzial-und-baustellen.97162/",
-      "urlToImage": "https://pics.computerbase.de/1/2/2/4/5/9-6cf7591fdde46a48/article-1280x720.587a9430.jpg",
-      "publishedAt": "2026-05-03T14:28:00Z",
-      "content": "Half-Life in der DDR, so ließ sich der Reiz des unter anderem in Deutschland entwickelten Industria beschreiben. Teil 2 ist eher wie die DDR: An einigen Stellen ganz vielversprechend, in der Umsetzun… [+2135 chars]"
     }
   ],
-  "letztesUpdate": "4.6.2026, 11:39:25"
+  "letztesUpdate": "5.6.2026, 11:00:53"
 }
